@@ -1,0 +1,23 @@
+<div class="flex justify-center mt-5 gap-5">
+  <div class="max-w-sm bg-slate-200 border border-gray-200 rounded-lg shadow" *ngFor="let article of articles">
+    <a>
+      <img class="rounded-t-lg" src="{{ article.profile }}" alt="" />
+    </a>
+
+    <div class="p-5">
+      <a href="#">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          {{ article.title }}
+        </h5>
+      </a>
+      <p class="mb-3 font-normal">
+        {{ article.description }}
+      </p>
+      <div>
+        This article is written by :
+        <span class="font-bold text-xl">{{ article.author_name }}</span>
+      </div>
+      <p>Is written at : {{ article.created_at }}</p>
+    </div>
+  </div>
+</div>

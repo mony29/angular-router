@@ -1,0 +1,10 @@
+.active {
+    color: red;
+    text-decoration: none;
+  }
+
+  .linkActive {
+    background-color: #007bff; /* Change this color to your desired active color */
+    color: #fff; /* Change text color for better visibility */
+    /* Add any other styling you want for the active link */
+  }

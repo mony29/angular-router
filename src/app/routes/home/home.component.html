@@ -1,0 +1,11 @@
+
+<div class="flex justify-center mt-5 gap-5">
+    <div *ngFor="let article of articles" class="max-w-sm rounded-lg">
+      <a class="cursor-pointer" (click)="setArticleById(article.id)">
+        <img class="rounded-lg" src="{{ article.profile }}" alt="" />
+      </a>
+    </div>
+  </div>
+
+
+<!-- <router-outlet></router-outlet> -->
